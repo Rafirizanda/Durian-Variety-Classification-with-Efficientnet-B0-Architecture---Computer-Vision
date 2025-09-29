@@ -63,6 +63,25 @@ The study investigates how model design, training configuration, and hyperparame
 | LR=0.00001, BS=16, Dense=(64,128,256), Epoch=30 | 96.2% | 0.96 |
 
 
+## ✅ Conclusion
+1. A classification model for durian varieties was successfully developed using the **EfficientNet-B0 architecture**, achieving up to **99% accuracy** in classifying 7 durian varieties.  
+2. The proposed EfficientNet-B0 model demonstrated **high performance** using **transfer learning from ImageNet** with **data augmentation** and **without fine-tuning**, achieving:  
+   - Training accuracy: **99.67%**  
+   - Validation accuracy: **100%**  
+   - Training loss: **0.1383**  
+   - Validation loss: **0.1283**  
+   The analysis showed that training **without fine-tuning performed better** than fine-tuning, which tended to cause overfitting.  
+3. The **best hyperparameter configuration** obtained through tuning consisted of:  
+   - Dense layer: **128 neurons**  
+   - Epochs: **20**  
+   - Learning rate: **0.001**  
+   - Batch size: **16**  
+   With this setup, the model achieved:  
+   - Training accuracy: **99.95%**  
+   - Validation accuracy: **99.29%**  
+   - Training loss: **0.0699**  
+   - Validation loss: **0.0805**
+     
 ---
 
 ## 📦 Tech Stack
@@ -73,16 +92,6 @@ The study investigates how model design, training configuration, and hyperparame
 - **Model**: EfficientNet-B0 pretrained weights (Transfer Learning)  
 
 ---
-
-## 📂 Repository Structure
-📦 durian-cnn-efficientnetb0
-┣ 📂 data/ # Dataset (images of durian varieties)
-┣ 📂 notebooks/ # Jupyter notebooks for EDA & experiments
-┣ 📂 models/ # Saved models & checkpoints
-┣ 📜 train.py # Training script
-┣ 📜 evaluate.py # Evaluation script
-┣ 📜 requirements.txt # Dependencies
-┗ 📜 README.md # Project documentation
 
 
 
