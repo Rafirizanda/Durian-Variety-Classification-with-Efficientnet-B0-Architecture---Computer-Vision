@@ -2,11 +2,24 @@
 
 # 🍈 Implementation of Convolutional Neural Network Based on EfficientNet-B0 Architecture for Durian Variety Classification
 
-## 📌 Project Overview
-This project focuses on building a **Convolutional Neural Network (CNN)** model based on the **EfficientNet-B0 architecture** to classify images of **durian varieties**.  
-Durian is a tropical fruit with many local varieties, and accurate classification is important for agricultural management, research, and commerce.  
+## 📖 Project Overview
 
-The study investigates how model design, training configuration, and hyperparameter tuning affect classification accuracy.
+Durian (*Durio zibethinus Murr*) is one of the most popular tropical fruits in Southeast Asia with high economic value. In Indonesia, durian production has shown a **consistent increase over the past five years**, reaching nearly **2 million tons in 2024** according to official statistics (BPS). Durian is not only a key agricultural commodity but also contributes to **agrotourism and international trade**, making its quality and varietal classification crucial for farmers, sellers, and consumers.
+
+However, challenges remain in the **accurate identification of durian varieties**. Currently, classification is often performed manually, requiring expert knowledge and leaving room for **market manipulation** (e.g., selling common durian as premium “Musang King”). Such misclassification leads to consumer distrust and price instability in the market.  
+
+To address these issues, this project leverages **Deep Learning and Image Processing** to build an automated durian variety classification system. Specifically, we implement a **Convolutional Neural Network (CNN) using EfficientNet-B0 architecture**, which is well-known for its **balance between accuracy and computational efficiency**.  
+
+EfficientNet-B0 offers several advantages:
+- Lightweight architecture (5.3M parameters, 0.39B FLOPs) → suitable for real-time applications.  
+- Strong performance in fruit image datasets (up to 99%+ accuracy).  
+- Supports **transfer learning with ImageNet pre-trained weights**, reducing training time and improving accuracy with limited labeled data.  
+
+By experimenting with **hyperparameter tuning (learning rate, batch size, dense layers, epochs)**, this project aims to develop a robust classification model that can accurately recognize **7 durian varieties**. The system is expected to contribute towards:  
+- Enhancing transparency in the durian market.  
+- Reducing fraud in varietal labeling.  
+- Supporting farmers and sellers in maintaining quality assurance.  
+- Opening opportunities for **real-time applications** in agriculture and agrotourism.  
 
 ---
 
