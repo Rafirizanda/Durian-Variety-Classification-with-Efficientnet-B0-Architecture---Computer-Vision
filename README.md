@@ -51,16 +51,59 @@ The study investigates how model design, training configuration, and hyperparame
 - The best performing configuration achieved **highest accuracy** with tuned hyperparameters.  
 - Results highlight that **learning rate and dense layer units** had the most significant impact on performance.  
 
-*(You can add result tables or graphs here, e.g., accuracy vs epochs, confusion matrix heatmap, etc.)*  
+
+To evaluate the performance of the **EfficientNet-B0** model for **Durian Variety Classification**, several experiments were conducted by varying key hyperparameters: **number of epochs, learning rate, batch size, and dense layer configuration**.  
 
 ---
 
-## 📊 Example Results
-| Configuration | Accuracy | F1-Score |
-|---------------|----------|----------|
-| LR=0.001, BS=32, Dense=(128), Epoch=20 | 95.3% | 0.95 |
-| LR=0.0001, BS=64, Dense=(64,128), Epoch=30 | **97.0%** | **0.97** |
-| LR=0.00001, BS=16, Dense=(64,128,256), Epoch=30 | 96.2% | 0.96 |
+### 📊 Performance Metrics per Hyperparameter
+
+#### 1. Number of Epochs
+| Epoch | Accuracy | Precision | Recall | F1-score |
+|-------|----------|-----------|--------|-----------|
+| 10    | 0.97     | 0.97      | 0.97   | 0.97      |
+| 20    | 0.97     | 0.98      | 0.97   | 0.98      |
+| 30    | 0.96     | 0.97      | 0.96   | 0.96      |
+| 40    | 0.96     | 0.97      | 0.96   | 0.96      |
+
+---
+
+#### 2. Learning Rate
+| Learning Rate | Accuracy | Precision | Recall | F1-score |
+|---------------|----------|-----------|--------|-----------|
+| 0.01          | 0.94     | 0.96      | 0.94   | 0.94      |
+| 0.001         | 0.97     | 0.97      | 0.97   | 0.97      |
+| 0.0001        | 0.96     | 0.97      | 0.96   | 0.96      |
+
+---
+
+#### 3. Batch Size
+| Batch Size | Accuracy | Precision | Recall | F1-score |
+|------------|----------|-----------|--------|-----------|
+| 16         | 0.97     | 0.97      | 0.97   | 0.97      |
+| 32         | 0.98     | 0.98      | 0.98   | 0.98      |
+| 64         | 0.98     | 0.98      | 0.98   | 0.98      |
+
+---
+
+#### 4. Dense Layer Configuration
+| Dense Layer        | Accuracy | Precision | Recall | F1-score |
+|--------------------|----------|-----------|--------|-----------|
+| 64                 | 0.97     | 0.97      | 0.97   | 0.97      |
+| 128                | 0.98     | 0.98      | 0.98   | 0.98      |
+| 256                | 0.97     | 0.98      | 0.97   | 0.97      |
+| 64, 128            | 0.97     | 0.97      | 0.97   | 0.97      |
+| 64, 128, 256       | 0.96     | 0.97      | 0.96   | 0.96      |
+
+---
+
+### ✅ Best Configuration
+
+The best results were obtained with the following configuration:
+- **Dense Layer = 128 neurons**  
+- **Epoch = 20**  
+- **Learning Rate = 0.001**  
+- **Batch Size = 16**  
 
 
 ## ✅ Conclusion
